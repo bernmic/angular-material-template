@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="navDashboard" datatype="html">
+        <source>Dashboard</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <target>Übersicht</target>
+      </trans-unit>
+      <trans-unit id="navText" datatype="html">
+        <source>Text</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <target>Text</target>
+      </trans-unit>
+      <trans-unit id="navData" datatype="html">
+        <source>Data</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+        <target>Daten</target>
+      </trans-unit>
+      <trans-unit id="navUsers" datatype="html">
+        <source>Users</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <target>Benutzer</target>
+      </trans-unit>
+      <trans-unit id="menuLogin" datatype="html">
+        <source>Login</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+        <target>Anmelden</target>
+      </trans-unit>
+      <trans-unit id="menuHelp" datatype="html">
+        <source>Help</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+        <target>Hilfe</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
