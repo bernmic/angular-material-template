@@ -1,6 +1,9 @@
 # AngularMaterialTemplate
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.1.
+This project is a simple template of a Single Page Application (SPA). Ich uses Angular 5.1 and Angular Material 5 and is build with the angular/cli.
+In the moment, no libraries beside Angular and Angular Material are used. Most of the parts and components are just the slightly modified examples from [angular.io](https://material.angular.io).  
+
+To use this template, you need to install node/npm and angular/cli. Then you can run `npm install` in the project folder and start the application with `ng serve`.
 
 ## Development server
 
