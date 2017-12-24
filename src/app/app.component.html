@@ -17,27 +17,27 @@
                            [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
       <mat-sidenav [opened]="!mobileQuery.matches" #lsnav [mode]="mobileQuery.matches ? 'over' : 'side'"
                    [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
-        <mat-list>
-          <mat-list-item>
+        <mat-nav-list>
+          <mat-list-item routerLinkActive="active" [routerLink]="['/dashboard']" >
             <mat-icon matListIcon color="accent">dashboard</mat-icon>
-            <a mat-list-item routerLinkActive="active" [routerLink]="['/dashboard']" i18n="@@navDashboard">Dashboard</a>
+            <span i18n="@@navDashboard">Dashboard</span>
           </mat-list-item>
 
           <mat-divider> </mat-divider>
 
-          <mat-list-item>
+          <mat-list-item routerLinkActive="active" routerLink="text" class="mat-primary">
             <mat-icon matListIcon color="accent">wrap_text</mat-icon>
-            <a mat-list-item routerLink="text" i18n="@@navText">Text</a>
+            <span i18n="@@navText">Text</span>
           </mat-list-item>
-          <mat-list-item>
+          <mat-list-item routerLinkActive="active" routerLink="data">
             <mat-icon matListIcon color="accent">grid_on</mat-icon>
-            <a mat-list-item routerLink="data" i18n="@@navData">Data</a>
+            <span i18n="@@navData">Data</span>
           </mat-list-item>
-          <mat-list-item>
+          <mat-list-item routerLinkActive="active" routerLink=".">
             <mat-icon matListIcon color="accent">people</mat-icon>
-            <a mat-list-item routerLink="." i18n="@@navUsers">Users</a>
+            <span i18n="@@navUsers">Users</span>
           </mat-list-item>
-        </mat-list>
+        </mat-nav-list>
       </mat-sidenav>
 
       <mat-sidenav #rsnav position="end" [mode]="mobileQuery.matches ? 'over' : 'side'"
@@ -64,6 +64,10 @@
     <button mat-menu-item>
       <mat-icon>help</mat-icon>
       <span i18n="@@menuHelp">Help</span>
+    </button>
+    <button mat-menu-item (click)="router.navigate(['/profile']);">
+      <mat-icon>build</mat-icon>
+      <span i18n="@@menuProfile">Profile</span>
     </button>
   </mat-menu>
   <mat-menu #themeMenu="matMenu">

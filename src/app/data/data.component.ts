@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {MatTableDataSource} from '@angular/material';
+import {Component, OnInit, ViewChild} from '@angular/core';
+import {MatSort, MatTableDataSource} from '@angular/material';
 
 @Component({
   selector: 'app-data',
@@ -11,11 +11,16 @@ export class DataComponent implements OnInit {
   displayedColumns = ['position', 'name', 'weight', 'symbol'];
   dataSource = new MatTableDataSource<Element>(ELEMENT_DATA);
 
+  @ViewChild(MatSort) sort: MatSort;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  ngAfterViewInit() {
+    this.dataSource.sort = this.sort;
+  }
 }
 
 export interface Element {

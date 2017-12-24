@@ -1,0 +1,16 @@
+<form class="profile-container">
+  <mat-form-field>
+    <input matInput placeholder="Email" type="email"/>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [matDatepicker]="picker" placeholder="Birthday">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-select placeholder="Gender">
+      <mat-option value="1">Female</mat-option>
+      <mat-option value="2">Male</mat-option>
+    </mat-select>
+  </mat-form-field>
+</form>
