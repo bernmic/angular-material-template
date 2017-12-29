@@ -65,7 +65,7 @@
       <mat-icon>help</mat-icon>
       <span i18n="@@menuHelp">Help</span>
     </button>
-    <button mat-menu-item (click)="router.navigate(['/profile']);">
+    <button mat-menu-item (click)="openSettingsDialog()">
       <mat-icon>build</mat-icon>
       <span i18n="@@menuProfile">Profile</span>
     </button>
@@ -88,6 +88,10 @@
       <mat-icon>fiber_manual_record</mat-icon>
       <span>Purple Green</span>
     </button>
+    <button mat-menu-item (click)="setCurrentTheme('brown-lime-light')">
+      <mat-icon>fiber_manual_record</mat-icon>
+      <span>Brown Lime</span>
+    </button>
     <mat-divider> </mat-divider>
     <h4 mat-subheader>Dark Themes</h4>
     <button mat-menu-item (click)="setCurrentTheme('indigo-pink-dark')">
@@ -105,6 +109,10 @@
     <button mat-menu-item (click)="setCurrentTheme('purple-green-dark')">
       <mat-icon>fiber_manual_record</mat-icon>
       <span>Purple Green</span>
+    </button>
+    <button mat-menu-item (click)="setCurrentTheme('brown-lime-dark')">
+      <mat-icon>fiber_manual_record</mat-icon>
+      <span>Brown Lime</span>
     </button>
   </mat-menu>
 </div>

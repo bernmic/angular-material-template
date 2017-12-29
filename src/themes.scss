@@ -72,3 +72,21 @@ $purple-green-dark-theme: mat-dark-theme($purple-green-primary, $purple-green-ac
 .purple-green-dark {
   @include angular-material-theme($purple-green-dark-theme);
 }
+
+/*
+BROWN LIME
+ */
+$brown-lime-primary: mat-palette($mat-brown);
+$brown-lime-accent:  mat-palette($mat-lime);
+
+$brown-lime-light-theme: mat-light-theme($brown-lime-primary, $brown-lime-accent);
+
+$brown-lime-dark-theme: mat-dark-theme($brown-lime-primary, $brown-lime-accent);
+
+.brown-lime-light {
+  @include angular-material-theme($brown-lime-light-theme);
+}
+
+.brown-lime-dark {
+  @include angular-material-theme($brown-lime-dark-theme);
+}
