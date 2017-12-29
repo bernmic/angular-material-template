@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   MatButtonModule, MatGridListModule, MatIconModule, MatListModule, MatMenuModule, MatSidenavModule, MatTableModule,
   MatToolbarModule, MatFormFieldModule, MatInputModule, MatSelectModule, MatDatepickerModule, MatNativeDateModule, MatRadioModule,
-  MatSortModule, MatDialogModule
+  MatSortModule, MatDialogModule, MatCardModule
 } from '@angular/material';
 import { LayoutModule } from '@angular/cdk/layout';
 
@@ -16,6 +16,7 @@ import { DataComponent } from './data/data.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SettingsDialogComponent } from './settings-dialog/settings-dialog.component';
+import { DashboardCardComponent, TodoDashboardCardComponent } from './dashboard/dashboard-card.component';
 
 
 export const routes: Routes = [
@@ -33,7 +34,9 @@ export const routes: Routes = [
     DataComponent,
     DashboardComponent,
     ProfileComponent,
-    SettingsDialogComponent
+    SettingsDialogComponent,
+    DashboardCardComponent,
+    TodoDashboardCardComponent
   ],
   imports: [
     FormsModule,
@@ -56,7 +59,8 @@ export const routes: Routes = [
     MatDatepickerModule,
     MatNativeDateModule,
     MatRadioModule,
-    MatDialogModule
+    MatDialogModule,
+    MatCardModule
   ],
   entryComponents: [SettingsDialogComponent],
   providers: [],

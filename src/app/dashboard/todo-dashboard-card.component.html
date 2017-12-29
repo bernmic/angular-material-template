@@ -1,0 +1,16 @@
+<mat-card class="dashboard-card">
+  <mat-card-header *ngIf="hasHeader()">
+    <mat-card-title *ngIf="hasTitle()">
+      {{title}}
+    </mat-card-title>
+    <mat-card-subtitle *ngIf="hasSubtitle()">
+      {{subtitle}}
+    </mat-card-subtitle>
+  </mat-card-header>
+  <mat-list role="list" dense="">
+    <mat-list-item role="listitem" *ngFor="let item of items">{{item}}</mat-list-item>
+  </mat-list>
+  <mat-card-footer *ngIf="hasFooter()">
+    {{footer}}
+  </mat-card-footer>
+</mat-card>
