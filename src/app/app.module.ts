@@ -17,6 +17,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SettingsDialogComponent } from './settings-dialog/settings-dialog.component';
 import { DashboardCardComponent, TodoDashboardCardComponent } from './dashboard/dashboard-card.component';
+import { ChartComponent } from './chart/chart.component';
 
 
 export const routes: Routes = [
@@ -24,7 +25,8 @@ export const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'text', component: TextComponent },
   { path: 'data', component: DataComponent },
-  { path: 'profile', component: ProfileComponent }
+  { path: 'profile', component: ProfileComponent },
+  { path: 'chart', component: ChartComponent }
 ];
 
 @NgModule({
@@ -36,7 +38,8 @@ export const routes: Routes = [
     ProfileComponent,
     SettingsDialogComponent,
     DashboardCardComponent,
-    TodoDashboardCardComponent
+    TodoDashboardCardComponent,
+    ChartComponent
   ],
   imports: [
     FormsModule,
