@@ -1,6 +1,6 @@
 # AngularMaterialTemplate
 
-This project is a simple template of a Single Page Application (SPA). It uses Angular 5.1 and Angular Material 5 and is build with the angular/cli.
+This project is a simple template of a Single Page Application (SPA). It uses Angular 6 and Angular Material 6 and is build with the angular/cli.
 In the moment, no libraries beside Angular and Angular Material are used. Most of the parts and components are just the slightly modified examples from [angular.io](https://material.angular.io).  
 
 To use this template, you need to install node/npm and angular/cli. Then you can run `npm install` in the project folder and start the application with `ng serve`.
