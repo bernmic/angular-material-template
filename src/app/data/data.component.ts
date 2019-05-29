@@ -1,4 +1,4 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {MatSort, MatTableDataSource} from '@angular/material';
 
 @Component({
@@ -11,7 +11,7 @@ export class DataComponent implements OnInit {
   displayedColumns = ['position', 'name', 'weight', 'symbol'];
   dataSource = new MatTableDataSource<Element>(ELEMENT_DATA);
 
-  @ViewChild(MatSort) sort: MatSort;
+  @ViewChild(MatSort,  {read: ElementRef, static: true}) sort: MatSort;
 
   constructor() { }
 

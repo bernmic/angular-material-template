@@ -8,7 +8,7 @@ import * as Chart from 'chart.js';
 })
 export class ChartComponent implements OnInit, AfterViewInit {
 
-  @ViewChild('myChart') canvas: ElementRef;
+  @ViewChild('myChart',  {read: ElementRef, static: true}) canvas: ElementRef;
 
   constructor() { }
 
