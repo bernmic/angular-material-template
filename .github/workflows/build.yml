@@ -25,7 +25,7 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Install Angular/CLI
-        run: npm install -g @angular/cli > /dev/null
+        run: npm install -g @angular/cli
         working-directory: ./frontend
       - name: Build frontend
         run: ng build --configuration production
