@@ -1,5 +1,4 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {isNullOrUndefined} from 'util';
 
 @Component({
   selector: 'app-dashboard-card',
@@ -22,15 +21,19 @@ export class DashboardCardComponent implements OnInit {
   }
 
   hasTitle(): boolean {
-    return !isNullOrUndefined(this.title);
+    return !this.isNullOrUndefined(this.title);
   }
 
   hasSubtitle(): boolean {
-    return !isNullOrUndefined(this.subtitle);
+    return !this.isNullOrUndefined(this.subtitle);
   }
 
   hasFooter(): boolean {
-    return !isNullOrUndefined(this.footer);
+    return !this.isNullOrUndefined(this.footer);
+  }
+
+  isNullOrUndefined(o: any): boolean {
+    return (o === null || o === undefined)
   }
 }
 
@@ -46,8 +49,12 @@ export class TodoDashboardCardComponent extends DashboardCardComponent implement
   items: string[] = [];
 
   ngOnInit() {
-    if (!isNullOrUndefined(this.list)) {
+    if (!this.isNullOrUndefined(this.list)) {
       this.items = this.list.split(",");
     }
+  }
+
+  isNullOrUndefined(o: any): boolean {
+    return (o === null || o === undefined)
   }
 }
