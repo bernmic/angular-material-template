@@ -42,43 +42,42 @@ export const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TextComponent,
-    DataComponent,
-    DashboardComponent,
-    ProfileComponent,
-    SettingsDialogComponent,
-    DashboardCardComponent,
-    TodoDashboardCardComponent,
-    ChartComponent
-  ],
-  imports: [
-    FormsModule,
-    RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' }),
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatMenuModule,
-    MatButtonModule,
-    LayoutModule,
-    MatSidenavModule,
-    MatListModule,
-    MatTableModule,
-    MatSortModule,
-    MatGridListModule,
-    MatInputModule,
-    MatFormFieldModule,
-    MatSelectModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
-    MatRadioModule,
-    MatDialogModule,
-    MatCardModule
-  ],
-  entryComponents: [SettingsDialogComponent],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        TextComponent,
+        DataComponent,
+        DashboardComponent,
+        ProfileComponent,
+        SettingsDialogComponent,
+        DashboardCardComponent,
+        TodoDashboardCardComponent,
+        ChartComponent
+    ],
+    imports: [
+        FormsModule,
+        RouterModule.forRoot(routes, { relativeLinkResolution: 'legacy' }),
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatIconModule,
+        MatMenuModule,
+        MatButtonModule,
+        LayoutModule,
+        MatSidenavModule,
+        MatListModule,
+        MatTableModule,
+        MatSortModule,
+        MatGridListModule,
+        MatInputModule,
+        MatFormFieldModule,
+        MatSelectModule,
+        MatDatepickerModule,
+        MatNativeDateModule,
+        MatRadioModule,
+        MatDialogModule,
+        MatCardModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

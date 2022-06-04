@@ -112,7 +112,6 @@
       }
     }
   },
-  "defaultProject": "angular-material-template",
   "schematics": {
     "@schematics/angular:component": {
       "prefix": "app",
