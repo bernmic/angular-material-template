@@ -1,6 +1,15 @@
 @use '@angular/material' as mat;
 @import '@angular/material/theming';
-@include mat.core();
+// TODO(v15): As of v15 mat.legacy-core no longer includes default typography styles.
+//  The following line adds:
+//    1. Default typography styles for all components
+//    2. Styles for typography hierarchy classes (e.g. .mat-headline-1)
+//  If you specify typography styles for the components you use elsewhere, you should delete this line.
+//  If you don't need the default component typographies but still want the hierarchy styles,
+//  you can delete this line and instead use:
+//    `@include mat.legacy-typography-hierarchy(mat.define-legacy-typography-config());`
+@include mat.all-legacy-component-typographies();
+@include mat.legacy-core();
 
 /*
 INDIGO PINK
@@ -13,11 +22,11 @@ $indigo-pink-light-theme: mat.define-light-theme($indigo-pink-primary, $indigo-p
 $indigo-pink-dark-theme: mat.define-dark-theme($indigo-pink-primary, $indigo-pink-accent);
 
 .indigo-pink-light {
-  @include mat.all-component-themes($indigo-pink-light-theme);
+  @include mat.all-legacy-component-themes($indigo-pink-light-theme);
 }
 
 .indigo-pink-dark {
-  @include mat.all-component-themes($indigo-pink-dark-theme);
+  @include mat.all-legacy-component-themes($indigo-pink-dark-theme);
 }
 
 /*
@@ -31,11 +40,11 @@ $deeppurple-amber-light-theme: mat.define-light-theme($deeppurple-amber-primary,
 $deeppurple-amber-dark-theme: mat.define-dark-theme($deeppurple-amber-primary, $deeppurple-amber-accent);
 
 .deeppurple-amber-light {
-  @include mat.all-component-themes($deeppurple-amber-light-theme);
+  @include mat.all-legacy-component-themes($deeppurple-amber-light-theme);
 }
 
 .deeppurple-amber-dark {
-  @include mat.all-component-themes($deeppurple-amber-dark-theme);
+  @include mat.all-legacy-component-themes($deeppurple-amber-dark-theme);
 }
 
 /*
@@ -49,11 +58,11 @@ $pink-bluegray-light-theme: mat.define-light-theme($pink-bluegray-primary, $pink
 $pink-bluegray-dark-theme: mat.define-dark-theme($pink-bluegray-primary, $pink-bluegray-accent);
 
 .pink-bluegray-light {
-  @include mat.all-component-themes($pink-bluegray-light-theme);
+  @include mat.all-legacy-component-themes($pink-bluegray-light-theme);
 }
 
 .pink-bluegray-dark {
-  @include mat.all-component-themes($pink-bluegray-dark-theme);
+  @include mat.all-legacy-component-themes($pink-bluegray-dark-theme);
 }
 
 /*
@@ -67,11 +76,11 @@ $purple-green-light-theme: mat.define-light-theme($purple-green-primary, $purple
 $purple-green-dark-theme: mat.define-dark-theme($purple-green-primary, $purple-green-accent);
 
 .purple-green-light {
-  @include mat.all-component-themes($purple-green-light-theme);
+  @include mat.all-legacy-component-themes($purple-green-light-theme);
 }
 
 .purple-green-dark {
-  @include mat.all-component-themes($purple-green-dark-theme);
+  @include mat.all-legacy-component-themes($purple-green-dark-theme);
 }
 
 /*
@@ -85,9 +94,9 @@ $brown-lime-light-theme: mat.define-light-theme($brown-lime-primary, $brown-lime
 $brown-lime-dark-theme: mat.define-dark-theme($brown-lime-primary, $brown-lime-accent);
 
 .brown-lime-light {
-  @include mat.all-component-themes($brown-lime-light-theme);
+  @include mat.all-legacy-component-themes($brown-lime-light-theme);
 }
 
 .brown-lime-dark {
-  @include mat.all-component-themes($brown-lime-dark-theme);
+  @include mat.all-legacy-component-themes($brown-lime-dark-theme);
 }
